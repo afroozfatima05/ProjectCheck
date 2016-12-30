@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,96 +15,120 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Services</a></li>
-       <li><a href="#">careers</a></li>
+      <li><a href="Services">Services</a></li>
+   
         <li><a href="aboutus">About Us</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="SignUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>
-<head>
-<script type="text/javascript" src="validate.js"></script>
-</head>
+  
+<style>
+.main{
+margin:5px;background-color:grey;border-radius:3px;padding:20px;font-size:110%;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}
+
+.cancelbtn {
+    width:auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+
+.container {
+    padding: 10px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
 <body>
-<form action="#" name="StudentRegistration" onsubmit="return(validate());">
+<div class="main">
 
-<table cellpadding="2" width="20%" bgcolor="white" align="center"
-cellspacing="2">
-<tr>
-<td colspan=2>
-<center><font size=4><b>SignUp here</b></font></center>
-</td>
-</tr>
+<center> <h2>SignUp for free</h2>
+</center>
+<form action="action_page.php">
+ 
 
-<tr>
-<td>First Name</td>
-<td><input type=text name=textnames id="textname" size="30"></td>
-</tr>
+  <center><div class="container">
+    <label><b>Username:<input type="text" placeholder="Enter Username" name="uname" required></b></label>
+    <br>
+       
+    <label><b>Password:<input type="password" placeholder="Enter Password" name="psw" required></b></label>
+    <br>
+   <label><b>Confirm password:<input type="text" placeholder="Confirm Password" name="psw" required></b></label>
+    .<br>
 
-<tr>
-<td>Last Name</td>
-<td><input type="text" name="fathername" id="fathername"
-size="30"></td>
-</tr>
-<tr>
-<td> Address</td>
-<td><input type="text" name="paddress" id="paddress" size="30"></td>
-</tr>
+    <label><b>City:<input type="text" placeholder="Enter City" name="city" required></b></label>
+    <br>
+ 
+    <label><b>State:<input type="text" placeholder="state" name="state" required></b></label>
+    <br>
+   
+    <label><b>Email:<input type="text" placeholder="Enter mail id" name="eid" required></b></label>
+    <br>
+    <br>
+    <label><b>Mobile no.:<input type="text" placeholder="Enter mobile no." name="mno" required></b></label>
+    <br>
+   
+    
+     <center><button type="submit">GO</button></center>
+    
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
 
-
-<tr>
-<td>Sex</td>
-<td><input type="radio" name="sex" value="male" size="10">Male
-<input type="radio" name="sex" value="Female" size="10">Female</td>
-</tr>
-
-<tr>
-<td>City</td>
-<td><select name="City">
-<option value="-1" selected>select..</option>
-<option value="New Delhi">NEW DELHI</option>
-<option value="Mumbai">MUMBAI</option>
-<option value="Goa">GOA</option>
-<option value="Patna">PATNA</option>
-</select></td>
-</tr>
-
-
-<tr>
-<td>State</td>
-<td><select Name="State">
-<option value="-1" selected>select..</option>
-<option value="New Delhi">NEW DELHI</option>
-<option value="Mumbai">MUMBAI</option>
-<option value="Goa">GOA</option>
-<option value="Bihar">BIHAR</option>
-<option value="Andhra Pradesh">AP</option>
-<option value="Telengana">Telengana</option>
-</select></td>
-</tr>
-<tr>
-<td>PinCode</td>
-<td><input type="text" name="pincode" id="pincode" size="30"></td>
-
-</tr>
-<tr>
-<td>EmailId</td>
-<td><input type="text" name="emailid" id="emailid" size="30"></td>
-</tr>
-
-
-<tr>
-<td>MobileNo</td>
-<td><input type="text" name="mobileno" id="mobileno" size="30"></td>
-</tr>
-<tr>
-<td><input type="reset"></td>
-<td colspan="2"><input type="submit" value="SignUp" /></td>
-</tr>
-</table>
+  <div class="container" style="background-color:#f1f1f1">
+   <center> <button type="button" class="cancelbtn">Cancel</button></center>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
 </form>
+</center>
+
 </body>
+</div>
 </html>
+    }

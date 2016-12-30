@@ -7,43 +7,68 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
+ <style>
+ 
+ 
+ #navbar{
+color:white;margin:30px;border-radius:10px;font-size:110%;
+}
+ 
+
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 70%;
       margin: auto;
   }
+  #footer{
+border:5px;color:solid-gray;
+width:auto;clear:both;  
+font-size=90%;
+}
+ 
   </style>
 </head>
-<body>
 
-<nav class="navbar navbar-inverse">
+
+<body>
+ 
+ <nav class="navbar navbar-inverse" margin-bottom:0px>
+ <div id="navbar">
+ 
+ 
   <div class="container-fluid">
     <div class="navbar-header">
+   
       <a class="navbar-brand" href="#">CarsOnTheGo</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="index">Home</a></li>
+      <li class="active"><a href="#">Home</a></li>
       <li><a href="Services">Services</a></li>
-       <li><a href="#">Careers</a></li>
+       
         <li><a href="aboutus">About Us</a></li>
     </ul>
+    
     <ul class="nav navbar-nav navbar-right">
       <li><a href="SignUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
+  </div>
 </nav>
+
 <div class="container">
 <div class="jumbotron text-center">
-<h1>Welcome to CarsOnTheGo</h1>
+<h1>Welcome to CarsOnTheGo.com</h1>
 <p>Buy your favourite cars at cheapest prices</p>
 <button type=button class="btn btn-default">New Car</button>
 <button type=button class="btn btn-default">Used Car</button>
 </div>
-  
+
 <div class="container">
-  <br>
+<br>
+<br>
+<div class="clearfix" style="margin-bottom:20px;"></div>
+
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -108,8 +133,52 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
+  <div class="clearfix" style="margin-bottom:20px;"></div>
+  
+  
+<div class="row">
+  <div class="col-sm-4">
+  <div class="panel panel-primary">
+  <div class="panel-body">body
+  <p>CarsOnTheGo</p>
+  </div>
  
+  <div class="panel-body">
+  </div> </div></div>
+ 
+  <div class="row">
+  <div class="col-sm-4">
+  <div class="panel panel-primary">
+  <div class="panel-body">body 
+  <p>CarsOnTheGo</p>
+  </div>
+ 
+  <div class="panel-body">
+  </div> </div></div>
+  
+  <div class="row">
+  <div class="col-sm-4">
+  <div class="panel panel-primary">
+  <div class="panel-body">body 
+  <p>CarsOnTheGo</p>
+  </div>
+ 
+  <div class="panel-body">
+  </div> </div></div>
+  </div>
+  </div>
+  <div class="well"><center>&copy; 2016 CarsOnTheGo.com. All rights reserved</center>
+  </div>
+  
+ 
+<br>
+    
+  </div>
+  </div>
+ 
+</div>
+
+
 
 </body>
 </html>

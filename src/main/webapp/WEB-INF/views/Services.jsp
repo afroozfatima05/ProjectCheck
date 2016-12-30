@@ -26,7 +26,7 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="/trucks">Home</a></li>
       <li><a href="Services">Services</a></li>
-       <li><a href="#">Careers</a></li>
+       
         <li><a href="aboutus">About Us</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -40,7 +40,7 @@
 <div class="row">
   <div class="col-md-5">
     <a href="#" class="thumbnail">
-          <img src="resources/img/cars1.jpg" style="width: 700px; height: 400px">
+          <img src="resources/img/cars1.jpg" style="width:700px; height: 500px">
     </a>
     </div>
 
@@ -50,7 +50,7 @@
      <br>
      <br>
         <br>
-          
+ 
            
 
       <center><button type=button class="btn btn-default">Buy New Cars</button></center>

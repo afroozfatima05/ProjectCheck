@@ -15,24 +15,27 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Services</a></li>
-       <li><a href="#">careers</a></li>
-        <li><a href="#">About Us</a></li>
+      <li><a href="Services">Services</a></li>
+       
+        <li><a href="aboutus">About Us</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="SignUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>
   
 <style>
+.main{
+margin:5px;background-color:grey;border-radius:3px;padding:20px;font-size:110%;
+}
 form {
     border: 3px solid #f1f1f1;
 }
 
 input[type=text], input[type=password] {
-    width: 100%;
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -83,10 +86,11 @@ span.psw {
 }
 </style>
 <body>
+<div class="main">
 
 <center> <h2>Login Form</h2>
 </center>
-<form action="action_page.php">
+<center><form action="action_page.php">
  
 
   <div class="container">
@@ -106,8 +110,9 @@ span.psw {
    <center> <button type="button" class="cancelbtn">Cancel</button></center>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
-</form>
+</form></center>
 
 </body>
+</div>
 </html>
     
