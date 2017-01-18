@@ -18,8 +18,8 @@ color:white;margin:20px;border-radius:15px;font-size:150%;}
   }
   </style>
 </head>
-<body>
 
+<body>
 <nav class="navbar navbar-inverse" margin-bottom:10px>
  
                 <div id="navbar">
@@ -44,38 +44,5 @@ color:white;margin:20px;border-radius:15px;font-size:150%;}
   </div>
   </div>
 </nav>  
-
-<body>
-<div class="row">
-  <div class="col-md-5">
-    <a href="#" class="thumbnail">
-          <img src="resources/img/cars1.jpg" style="width:700px; height: 500px">
-    </a>
-    </div>
-
-
-   <div class="col-md-2">
-     <center><h1>Services</h1></center>
-     <br>
-     <br>
-        <br>
- 
-           
-
-      <center><button type=button class="btn btn-primary">Buy New Cars</button></center>
-      <center> <button type=button class="btn btn-primary">Exchange Old Cars</button></center>
-      <center><button type=button class="btn btn-primary">Roadside Assistance</button></center>
-      <center><button type=button class="btn btn-primary">Customer Care</button></center>
-     <center><button type=button class="btn btn-primary">Connect With Us</button></center>
-</div>
-
-
-<div class="col-md-5">
-<a href="#" class="thumbnail">
-<img src="resources/img/cars2.jpg" style="width: 700px; height: 500px">
-</a>
-</div>
-</div>
-
 </body>
 </html>

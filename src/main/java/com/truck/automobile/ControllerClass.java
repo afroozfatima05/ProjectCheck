@@ -1,10 +1,16 @@
 package com.truck.automobile;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.backend.dao.UsersDao;
+import com.backend.model.Users;
  
 @Controller
 public class ControllerClass {
+	
+	
 	@RequestMapping("/")
 	public String index()
 	{
@@ -34,5 +40,11 @@ public class ControllerClass {
 	{
 		System.out.println("signup called");
 		return "Services";
+	}
+	@RequestMapping("/contactus")
+	public String contactus()
+	{
+		System.out.println("signup called");
+		return "contactus";
 	}
 }

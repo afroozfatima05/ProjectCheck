@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Case</title>
+  <title>cars on the go</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,41 +11,56 @@
  
  
  #navbar{
-color:white;margin:30px;border-radius:10px;font-size:110%;
-}
- 
+color:white;margin:8px;border-radius:15px;font-size:150%;}
+
 
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 70%;
       margin: auto;
   }
-  #footer{
-border:5px;color:solid-gray;
-width:auto;clear:both;  
-font-size=90%;
-}
+ 
  
   </style>
 </head>
 
 
 <body>
- 
- <nav class="navbar navbar-inverse" margin-bottom:0px>
- <div id="navbar">
- 
- 
+<!--  
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-   
-      <a class="navbar-brand" href="#">CarsOnTheGo</a>
+      <a class="navbar-brand" href="#">Cars</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="/trucks">Home</a></li>
+      <li><a href="services">Services</a></li>
+       <li><a href="#">careers</a></li>
+        <li><a href="aboutus">About Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+ -->
+ <nav class="navbar navbar-inverse" margin-bottom:10px>
+ 
+                <div id="navbar">
+ 
+                  <div class="container-fluid">
+                   <div class="navbar-header">
+                   <a class="navbar-brand" href="/trucks">CarsOnTheGo</a>
+                    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/trucks">Home</a></li>
       <li><a href="Services">Services</a></li>
        
         <li><a href="aboutus">About Us</a></li>
+         <li class="current icon"><a href="/trucks"><img src="resources/img/logoex.png" alt="" width="150" height="60"></a></li>
+   <li><a href="contactus">Contact Us</a></li>
+   
     </ul>
     
     <ul class="nav navbar-nav navbar-right">
@@ -54,14 +69,15 @@ font-size=90%;
     </ul>
   </div>
   </div>
-</nav>
+</nav>  
+
 
 <div class="container">
 <div class="jumbotron text-center">
 <h1>Welcome to CarsOnTheGo.com</h1>
 <p>Buy your favourite cars at cheapest prices</p>
-<button type=button class="btn btn-default">New Car</button>
-<button type=button class="btn btn-default">Used Car</button>
+<button type=button class="btn btn-danger">New Car</button>
+<button type=button class="btn btn-danger">Used Car</button>
 </div>
 
 <div class="container">
@@ -89,12 +105,7 @@ font-size=90%;
       </div>
      
     
-      <div class="item">
-        <img src="resources/img/car2.jpg"  style="width: 800px; height: 400px">
-        <div class="carousel-caption">
-         
-        </div>
-      </div> 
+      
 
       <div class="item">
         <img src="resources/img/car3.jpg"  style="width: 800px; height: 400px">
@@ -139,8 +150,9 @@ font-size=90%;
 <div class="row">
   <div class="col-sm-4">
   <div class="panel panel-primary">
-  <div class="panel-body">body
-  <p>CarsOnTheGo</p>
+  <div class="panel-body"><h1>Compare Cars</h1>
+  <p>Compare cars for best possible prices</p>
+  <center><button type=button class="btn btn-lg btn-danger">Compare</button></center>
   </div>
  
   <div class="panel-body">
@@ -149,8 +161,9 @@ font-size=90%;
   <div class="row">
   <div class="col-sm-4">
   <div class="panel panel-primary">
-  <div class="panel-body">body 
-  <p>CarsOnTheGo</p>
+  <div class="panel-body"><h1>Value your Car</h1>
+  <p>Find out what your car is worth to a buyer</p>
+  <center><button type=button class="btn btn-lg btn-danger">Value</button></center>
   </div>
  
   <div class="panel-body">
@@ -159,26 +172,74 @@ font-size=90%;
   <div class="row">
   <div class="col-sm-4">
   <div class="panel panel-primary">
-  <div class="panel-body">body 
-  <p>CarsOnTheGo</p>
+  <div class="panel-body"><h1>Sell your Car</h1>
+  <p>Sell your car for the best price at right place
+  </p>
+ <center><button type=button class="btn btn-lg btn-danger">Sell</button></center>
   </div>
  
   <div class="panel-body">
   </div> </div></div>
   </div>
   </div>
-  <div class="well"><center>&copy; 2016 CarsOnTheGo.com. All rights reserved</center>
+  
+  <footer>
+			<h1 class="sr-only">Site Footer Bar</h1>
+			
+	<div class="site-footer">
+		<div class="wrapper row">		
+			<div class="col-lg-6 col-ss-12">
+				<div class="footer-groups">
+					<nav class="footer-navigation">
+	<h1 class="sr-only">Footer Navigation</h1>
+	<div class="col-lg-4 col-ss-12 pull-left">
+	    <h3>Customer Service</h3>
+	    <ul class="groups first">
+		    <li><a href="/contact-us">Contact Us</a></li>
+		    <li><a href="/delivery-policy">Delivery Policy</a></li>
+		    <li><a href="/returns-policy">Returns Policy</a></li>
+		    <li><a href="/faqs">Help and FAQs</a></li>
+	    </ul>
+	</div>
+	<div class="col-lg-4 col-ss-12 pull-left">
+	    <h3>Legal info</h3>
+	    <ul class="groups">
+		    <li><a href="/terms-of-use">Terms Of Use</a></li>
+		    <li><a href="/terms&conditions">Terms and Conditions</a></li>
+		    <li><a href="/cookies">Cookies</a></li>
+		    <li><a href="/security-and-privacy">Security and Privacy</a></li>
+	    </ul>
+	    </div>
+	<div class="col-lg-4 col-ss-12 pull-left">
+	    <h3>Useful Information</h3>
+	    <ul class="groups">
+		    <li><a href="/affiliates">Affiliates</a></li>
+		    <li><a href="/press-enquiries">Press Enquiries</a></li>
+		    <li><a href="/why-buy-from-us">Why Buy From Us?</a></li>
+		    <li><a href="/types-of-movement">Types of Movement</a></li>
+		    <li><a href="/corporate-gifts">Corporate Gifts</a></li>
+	    </ul>
+	</div>
+	 
+</nav>	
   </div>
   
+  
  
-<br>
+<footer class="site-footer">
+  <h3></h3>
+  
+</div>
+  </div>
+  
+  </footer>
+
     
   </div>
   </div>
- 
-</div>
 
-
+<div class="well"><center>&copy; 2016 CarsOnTheGo.com. All rights reserved</center>
+	 </div>
 
 </body>
 </html>

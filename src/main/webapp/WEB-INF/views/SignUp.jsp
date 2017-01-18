@@ -1,43 +1,67 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+ <style>
+ 
+ 
+ #navbar{
+color:white;margin:20px;border-radius:15px;font-size:150%;}
 
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+ 
+ 
+  </style>
 </head>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">CarsOnTeGo</a>
-    </div>
+
+
+<body>
+ 
+ <nav class="navbar navbar-inverse" margin-bottom:10px>
+ 
+                <div id="navbar">
+ 
+                  <div class="container-fluid">
+                   <div class="navbar-header">
+                   <a class="navbar-brand" href="/trucks">CarsOnTheGo</a>
+                    </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="/trucks">Home</a></li>
       <li><a href="Services">Services</a></li>
-   
+       
         <li><a href="aboutus">About Us</a></li>
+         <li class="current icon"><a href="/trucks"><img src="resources/img/logoex.png" alt="" width="150" height="60"></a></li>
+         <li><a href="contactus">Contact Us</a></li>
     </ul>
+    
     <ul class="nav navbar-nav navbar-right">
       <li><a href="SignUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
+  </div>
 </nav>
-  
 <style>
-.main{
-margin:5px;background-color:grey;border-radius:3px;padding:20px;font-size:110%;
-}
+body{background-image:url("resources/img/login1.jpg");}
 
-form {
-    border: 3px solid #f1f1f1;
-}
+
 
 input[type=text], input[type=password] {
     width: 80%;
-    padding: 12px 20px;
+    padding: 10px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -47,18 +71,13 @@ input[type=text], input[type=password] {
 button {
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 10px 20px;
+    margin: 5px 0;
     border: none;
     cursor: pointer;
     width: 25%;
 }
 
-.cancelbtn {
-    width:auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
 
 .imgcontainer {
     text-align: center;
@@ -67,7 +86,7 @@ button {
 
 
 .container {
-    padding: 10px;
+    padding: 16px;
 }
 
 span.psw {
@@ -75,60 +94,46 @@ span.psw {
     padding-top: 16px;
 }
 
-/* Change styles for span and cancel button on extra small screens */
+/* Change styles for span and cancel button on extra small screens 
 @media screen and (max-width: 300px) {
     span.psw {
        display: block;
        float: none;
     }
-    .cancelbtn {
-       width: 100%;
-    }
-}
+    
+}*/
 </style>
 <body>
+
 <div class="main">
 
-<center> <h2>SignUp for free</h2>
-</center>
-<form action="action_page.php">
+<center><h2>SignUp for free</h2></center>
+<center><form action="action_page.php">
  
 
-  <center><div class="container">
+  <div class="container">
     <label><b>Username:<input type="text" placeholder="Enter Username" name="uname" required></b></label>
     <br>
-       
+       <br>
     <label><b>Password:<input type="password" placeholder="Enter Password" name="psw" required></b></label>
     <br>
-   <label><b>Confirm password:<input type="text" placeholder="Confirm Password" name="psw" required></b></label>
-    .<br>
-
-    <label><b>City:<input type="text" placeholder="Enter City" name="city" required></b></label>
     <br>
- 
-    <label><b>State:<input type="text" placeholder="state" name="state" required></b></label>
+    <label><b>Confirm password:<input type="text" placeholder="Confirm Password" name="psw" required></b></label>
     <br>
-   
-    <label><b>Email:<input type="text" placeholder="Enter mail id" name="eid" required></b></label>
-    <br>
-    <br>
+  
     <label><b>Mobile no.:<input type="text" placeholder="Enter mobile no." name="mno" required></b></label>
     <br>
+   </div>
+    
+     <button type="submit">SignUp</button>
+    
+   
+  <div class="container" style="background-color:#f1f1f1">
    
     
-     <center><button type="submit">GO</button></center>
-    
-    <input type="checkbox" checked="checked"> Remember me
   </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-   <center> <button type="button" class="cancelbtn">Cancel</button></center>
-    <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
-</form>
-</center>
+</form></center>
 
 </body>
-</div>
 </html>
-    }
